@@ -78,6 +78,9 @@ REPO_DIR=$(CDPATH= cd "$(dirname "$0")" && pwd)
 SRC_CONFIG_DIR="$REPO_DIR"
 DEST_CONFIG_DIR="$HOME/.config"
 
+WALL_SRC_DIR="$REPO_DIR/wallpapers"
+WALL_DEST_DIR="$HOME/Pictures/Wallpapers"
+
 
 CONFIG_FOLDERS='
 hypr
@@ -254,17 +257,58 @@ for folder in $CONFIG_FOLDERS; do
     cp -R "$src" "$dest"
 done
 
+
+
+
 ###############################################################################
 # MAKE SCRIPTS EXECUTABLE
 ###############################################################################
 if [ -d "$DEST_CONFIG_DIR/hypr/scripts" ]; then
-    # Ignore errors if no regular files
     for f in "$DEST_CONFIG_DIR"/hypr/scripts/*; do
         if [ -f "$f" ]; then
             chmod +x "$f" || true
         fi
     done
 fi
+
+
+###############################################################################
+# COPY WALLPAPERS TO ~/Pictures/Wallpapers
+###############################################################################
+echo
+echo "Wallpapers source directory: $WALL_SRC_DIR"
+echo "Wallpapers destination directory: $WALL_DEST_DIR"
+
+if [ -d "$WALL_SRC_DIR" ]; then
+    printf '%s' "Copy wallpapers to $WALL_DEST_DIR (existing files may be overwritten)? [y/N]: "
+    IFS= read -r COPY_WALLS || COPY_WALLS=""
+    [ -z "$COPY_WALLS" ] && COPY_WALLS="N"
+
+    case "$COPY_WALLS" in
+        y|Y)
+            # Create destination directory
+            mkdir -p "$WALL_DEST_DIR"
+
+            # Optional: backup existing wallpapers directory
+            if [ "$(ls -A "$WALL_DEST_DIR" 2>/dev/null || echo)" != "" ]; then
+                WALL_BACKUP_DIR="$WALL_DEST_DIR-backup-$(date +"%Y%m%d-%H%M%S")"
+                echo "Backing up existing wallpapers to: $WALL_BACKUP_DIR"
+                mkdir -p "$WALL_BACKUP_DIR"
+                cp -R "$WALL_DEST_DIR"/. "$WALL_BACKUP_DIR"/
+            fi
+
+            echo "Copying wallpapers..."
+            cp -R "$WALL_SRC_DIR"/. "$WALL_DEST_DIR"/
+            echo "Wallpapers copied to $WALL_DEST_DIR"
+            ;;
+        *)
+            echo "Skipping wallpaper copy."
+            ;;
+    esac
+else
+    echo "Wallpapers directory not found at $WALL_SRC_DIR; skipping wallpaper copy."
+fi
+
 
 echo
 echo "Done."

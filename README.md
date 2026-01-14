@@ -1,0 +1,1 @@
+# Nord Theme Hyprland Dots
