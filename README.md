@@ -50,5 +50,6 @@ git clone https://github.com/linuxlarp/nord-hyprland.git
 cd your-hyprland-dots
 chmod +x install.sh
 ./install.sh
+```
 
-To view all of my keybinds, and make adjustments. Refer to ![This file].
+To view all of my keybinds, and make adjustments. Refer to ![this file](https://github.com/linuxlarp/nord-hyprland/blob/master/KEYBINDS.md)
