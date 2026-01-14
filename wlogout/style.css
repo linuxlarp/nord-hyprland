@@ -1,0 +1,99 @@
+* {
+    background-image: none;
+    box-shadow: none;
+    font-family: JetBrains Mono, SF Mono, monospace;
+    font-size: 18px;
+}
+
+window {
+    background-color: rgba(46, 52, 64, 0.95);
+}
+
+button {
+    border-radius: 16px;
+    border-color: #3b4252;
+    text-decoration-color: #d8dee9;
+    color: #d8dee9;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #3b4252;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    margin: 10px;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+button:focus, button:active {
+    background-color: #5e81ac;
+    outline-style: none;
+    border-color: #81a1c1;
+}
+
+button:hover {
+    background-color: #81a1c1;
+    outline-style: none;
+    border-color: #88c0d0;
+    color: #2e3440;
+}
+
+#lock {
+    color: #88c0d0;
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#lock:hover {
+    background-color: #88c0d0;
+    color: #2e3440;
+}
+
+#logout {
+    color: #ebcb8b;
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#logout:hover {
+    background-color: #ebcb8b;
+    color: #2e3440;
+}
+
+#suspend {
+    color: #b48ead;
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#suspend:hover {
+    background-color: #b48ead;
+    color: #2e3440;
+}
+
+#hibernate {
+    color: #a3be8c;
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#hibernate:hover {
+    background-color: #a3be8c;
+    color: #2e3440;
+}
+
+#shutdown {
+    color: #bf616a;
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#shutdown:hover {
+    background-color: #bf616a;
+    color: #2e3440;
+}
+
+#reboot {
+    color: #d08770;
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
+
+#reboot:hover {
+    background-color: #d08770;
+    color: #2e3440;
+}
