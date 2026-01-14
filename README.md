@@ -16,6 +16,7 @@ Minimal Hyprland dotfiles & setup using the [Nord color palette](https://nordthe
 ![Wallpaper Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/overview.png)
 ![SwayNC Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/sway.png)
 
+
 ---
 
 ## Liability Warning
