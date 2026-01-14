@@ -1,0 +1,118 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 40,
+    "spacing": 0,
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "hyprland/window", "custom/spotify"],
+    "modules-center": [],
+    "modules-right": ["clock", "pulseaudio", "bluetooth", "network", "cpu", "memory", "battery", "tray", "custom/power"],
+
+    "custom/launcher": {
+        "format": "󰣇",
+        "on-click": "rofi -show drun",
+        "tooltip": false
+    },
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-click": "activate",
+        "all-outputs": true,
+        "active-only": false,
+        "persistent-workspaces": {
+            "*": 4
+        }
+    },
+
+    "hyprland/window": {
+        "format": " {}",
+        "max-length": 20,
+        "separate-outputs": true
+    },
+
+    "custom/spotify": {
+        "format": " {}",
+        "return-type": "json",
+        "on-click-right": "spotifatius toggle-liked",
+        "exec": "spotifatius monitor",
+        "max-length": 20
+    },
+    
+    "clock": {
+        "format": "{:%I:%M %p   %a %d %b}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "interval": 60
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "BAT {capacity}%",
+        "format-charging": "CHR {capacity}%",
+        "format-plugged": "PLG {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": "WIFI {signalStrength}%",
+        "format-ethernet": "ETH Connected",
+        "format-disconnected": "NET Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "MUTE",
+        "format-icons": {
+            "headphone": "HP",
+            "hands-free": "HF",
+            "headset": "HS",
+            "phone": "PH",
+            "portable": "PT",
+            "car": "CAR",
+            "default": ["VOL", "VOL", "VOL"]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "bluetooth": {
+        "format": "BT",
+        "format-connected": "BT {num_connections}",
+        "format-disabled": "BT OFF",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "blueman-manager"
+    },
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "interval": 2,
+        "tooltip": true,
+        "tooltip-format": "Cores: {load}\nAvg Load: {avg_frequency} GHz"
+    },
+
+    "memory": {
+        "format": "RAM {percentage}%",
+        "interval": 2,
+        "tooltip": true,
+        "tooltip-format": "Used: {used:0.1f}GB / {total:0.1f}GB\nAvailable: {avail:0.1f}GB"
+    },
+
+    "custom/power": {
+    	"format": "MENU",
+    	"on-click": "swaync-client -t",
+    	"tooltip": false
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    }
+}

@@ -1,0 +1,163 @@
+* {
+    border: none;
+    border-radius: 0px;
+    font-family: SF Mono, Iosevka, Noto Sans CJK;
+    font-size: 13px;
+    font-style: normal;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(46, 52, 64, 0.9);
+    color: #d8dee9;
+    border-radius: 16px;
+}
+
+#workspaces {
+    background: #3b4252;
+    margin: 5px;
+    padding: 8px 5px;
+    border-radius: 16px;
+    font-weight: normal;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    margin: 0px 3px;
+    border-radius: 16px;
+    color: #2e3440;
+    background-color: #d08770;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+    color: #2e3440;
+    background-color: #88c0d0;
+    border-radius: 16px;
+    min-width: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#workspaces button:hover {
+    background-color: #81a1c1;
+    color: #2e3440;
+    min-width: 50px;
+}
+
+#clock, #battery, #pulseaudio, #bluetooth, #network, #custom-brightness, #custom-launcher, #cpu, #memory {
+    background: #3b4252;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 16px;
+}
+
+#custom-brightness {
+    color: #ebcb8b;
+    font-weight: bold;
+}
+
+#tray {
+    background: #3b4252;
+    margin: 5px;
+    border-radius: 16px;
+    padding: 0px 12px;
+}
+
+#clock {
+    color: #88c0d0;
+    font-weight: bold;
+}
+
+#custom-power {
+    background: #3b4252;
+    color: #E6676B;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 16px;
+    padding: 0px 12px;
+}
+
+#battery {
+    color: #d8dee9;
+    font-weight: bold;
+}
+
+#battery.charging {
+    color: #a3be8c;
+}
+
+#battery.warning:not(.charging) {
+    color: #bf616a;
+}
+
+#network {
+    color: #88c0d0;
+    font-weight: bold;
+}
+
+#pulseaudio {
+    color: #b48ead;
+    font-weight: bold;
+}
+
+#bluetooth {
+    color: #81a1c1;
+    font-weight: bold;
+    background: #3b4252;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 16px;
+}
+
+#custom-launcher {
+    color: #d8dee9;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#custom-launcher:hover {
+    background-color: #5e81ac;
+}
+
+#custom-spotify {
+    background: #3b4252;
+    padding: 0px 15px;
+    border-radius: 16px;
+    margin: 5px 0px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #d8dee9;
+}
+
+#window {
+    background: #3b4252;
+    padding: 0px 15px;
+    border-radius: 16px;
+    margin: 5px;
+    font-weight: normal;
+    color: #d8dee9;
+}
+
+#cpu {
+    color: #a3be8c;
+    font-weight: bold;
+}
+
+#memory {
+    color: #ebcb8b;
+    font-weight: bold;
+}
+
+#disk {
+    background-color: #3b4252;
+    color: #b48ead;
+    border-radius: 16px;
+    margin: 5px;
+    padding: 0px 10px;
+    font-weight: bold;
+}
+
+#hyprland-window {
+    background-color: transparent;
+    color: #81a1c1;
+}

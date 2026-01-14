@@ -1,0 +1,257 @@
+* {
+  font-family: SF Mono, Iosevka, Noto Sans CJK;
+  font-size: 13px;
+}
+
+.notification-row {
+  outline: none;
+  margin: 5px;
+  padding: 0;
+}
+
+.notification {
+  background: rgba(59, 66, 82, 0.95);
+  border-radius: 16px;
+  margin: 5px;
+  padding: 0;
+  border: 2px solid #3b4252;
+}
+
+.notification-content {
+  background: transparent;
+  padding: 10px;
+  border-radius: 16px;
+}
+
+.notification-default-action {
+  margin: 0;
+  padding: 0;
+  border-radius: 16px;
+}
+
+.close-button {
+  background: #bf616a;
+  color: #2e3440;
+  text-shadow: none;
+  padding: 0;
+  border-radius: 50%;
+  margin: 8px;
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.close-button:hover {
+  background: #d08770;
+}
+
+.notification-action {
+  background: #5e81ac;
+  color: #d8dee9;
+  border-radius: 12px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.notification-action:hover {
+  background: #81a1c1;
+}
+
+.summary {
+  font-size: 14px;
+  font-weight: bold;
+  color: #88c0d0;
+}
+
+.body {
+  color: #d8dee9;
+  font-size: 13px;
+}
+
+.control-center {
+  background: rgba(46, 52, 64, 0.95);
+  border-radius: 16px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #3b4252;
+}
+
+.control-center-list {
+  background: transparent;
+}
+
+.control-center-list-placeholder {
+  opacity: 0.5;
+  color: #d8dee9;
+}
+
+.widget-title {
+  background: #3b4252;
+  color: #88c0d0;
+  font-weight: bold;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.widget-title > button {
+  background: #5e81ac;
+  color: #d8dee9;
+  border-radius: 12px;
+  padding: 5px 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.widget-title > button:hover {
+  background: #81a1c1;
+}
+
+.widget-dnd {
+  background: #3b4252;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.widget-dnd > switch {
+  background: #4c566a;
+  border-radius: 12px;
+  border: none;
+}
+
+.widget-dnd > switch:checked {
+  background: #88c0d0;
+}
+
+.widget-dnd > switch slider {
+  background: #d8dee9;
+  border-radius: 50%;
+}
+
+.widget-label {
+  color: #d8dee9;
+  font-weight: bold;
+}
+
+.blank-window {
+  background: transparent;
+}
+
+.widget-mpris {
+  background: #3b4252;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 5px;
+  color: #d8dee9;
+}
+
+.widget-mpris-player {
+  background: transparent;
+  padding: 5px;
+}
+
+.widget-mpris-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: #88c0d0;
+}
+
+.widget-mpris-subtitle {
+  font-size: 12px;
+  color: #d8dee9;
+  opacity: 0.8;
+}
+
+.widget-mpris > button {
+  background: #5e81ac;
+  color: #d8dee9;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 2px;
+}
+
+.widget-mpris > button:hover {
+  background: #81a1c1;
+}
+
+.widget-volume {
+  background: #3b4252;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.widget-volume > box {
+  background: transparent;
+  color: #b48ead;
+  font-weight: bold;
+}
+
+.widget-volume scale trough {
+  background: #4c566a;
+  border-radius: 8px;
+  min-height: 8px;
+}
+
+.widget-volume scale highlight {
+  background: #b48ead;
+  border-radius: 8px;
+}
+
+.widget-volume scale slider {
+  background: #d8dee9;
+  border-radius: 50%;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.widget-backlight {
+  background: #3b4252;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.widget-backlight > box {
+  background: transparent;
+  color: #ebcb8b;
+  font-weight: bold;
+}
+
+.widget-backlight scale trough {
+  background: #4c566a;
+  border-radius: 8px;
+  min-height: 8px;
+}
+
+.widget-backlight scale highlight {
+  background: #ebcb8b;
+  border-radius: 8px;
+}
+
+.widget-backlight scale slider {
+  background: #d8dee9;
+  border-radius: 50%;
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.widget-buttons-grid {
+  background: #3b4252;
+  border-radius: 16px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+  background: #5e81ac;
+  color: #d8dee9;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+  background: #81a1c1;
+}
