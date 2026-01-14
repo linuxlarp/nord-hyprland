@@ -2,38 +2,42 @@
 
 [![Made for Hyprland](https://img.shields.io/badge/WM-Hyprland-88C0D0?style=for-the-badge&logo=linux)]()
 [![Nord Theme](https://img.shields.io/badge/Theme-Nord-5E81AC?style=for-the-badge)]()
-[![Arch Based](https://img.shields.io/badge/Target-Arch%20Based-81A1C1?style=for-the-badge&logo=arch-linux)]()
+[![Arch Based](https://img.shields.io/badge/istro-Arch%20Based-81A1C1?style=for-the-badge&logo=arch-linux)]()
 [![License](https://img.shields.io/badge/License-MIT-A3BE8C?style=for-the-badge)]()
 
-Minimal Hyprland configuration using the [Nord color palette](https://nordtheme.com), including status bar, notifications, terminal, and QOL scripts.
+Minimal Hyprland dotfiles & setup using the [Nord color palette](https://nordtheme.com).
 
 ---
 
 # Showcase
 
-![]
+![Cava + Fastfetch](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/cava-fetch.png)
+![Fastfetch](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/fetch.png)
+![Wallpaper Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/overview.png)
+![SwayNC Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/sway.png)
 
 ---
 
 ## Liability Warning
 
-Use this configuration at your **own** risk.  
+Use these dotfiles at your **own** risk.  
 By running the install script or manually copying any files, you acknowledge that:
 
 - Your existing configuration files and settings may be overwritten or changed.
-- You are responsible for reviewing the code and understanding what it does.
-- The author is **not** liable for data loss, misconfiguration, system breakage, or any other damages.
+- You are responsible for reviewing the configs and install script, and establishing a clear understanding of what it does.
+- I am **not** liable for data loss, misconfiguration, system breakage, or any other damages.
 
-If you do not agree with these terms, do **not** run the installer and do not use these files.
+If you do not agree with these terms, do **not** run the installer or use my dotfiles.
 
 ---
 
 ## Features
 
 - Hyprland setup themed with Nord colors.
-- Preconfigured status bar, notifications, terminal, and utility apps.
+- Preconfigured waybar, notifications center (swaync), wlogout menu, rofi launcher, fastfetch, cava and more!
 - Optional package install for repo and AUR software (Arch-based systems only).
-- Automatic backup of existing configs before overwriting.
+- Automated install script, with automated backup (SEE WARNING ABOVE!)
+
 
 ---
 
