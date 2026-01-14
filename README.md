@@ -2,10 +2,12 @@
 
 [![Made for Hyprland](https://img.shields.io/badge/WM-Hyprland-88C0D0?style=for-the-badge&logo=linux)]()
 [![Nord Theme](https://img.shields.io/badge/Theme-Nord-5E81AC?style=for-the-badge)]()
-[![Arch Based](https://img.shields.io/badge/istro-Arch%20Based-81A1C1?style=for-the-badge&logo=arch-linux)]()
+[![Arch Based](https://img.shields.io/badge/Distro-Arch%20Based-81A1C1?style=for-the-badge&logo=arch-linux)]()
 [![License](https://img.shields.io/badge/License-MIT-A3BE8C?style=for-the-badge)]()
 
 Minimal Hyprland dotfiles & setup using the [Nord color palette](https://nordtheme.com).
+
+This repo is a work in progress, features may be missing, broken, or incomplete at this time. This is just a concept and WIP. Some manual setup or config may be required.
 
 
 ---
@@ -14,16 +16,7 @@ Minimal Hyprland dotfiles & setup using the [Nord color palette](https://nordthe
 
 ![Cava + Fastfetch](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/cava-fetch.png)
 ![Fastfetch](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/fetch.png)
-![Wallpaper Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/overview.png)
 ![SwayNC Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/sway.png)
-
-
----
-
-# Keybinds
-
-These can be changed in `~/.config/hypr/hyprland.conf`:
-
 
 
 ---
@@ -46,8 +39,7 @@ If you do not agree with these terms, do **not** run the installer or use my dot
 - Hyprland setup themed with Nord colors.
 - Preconfigured waybar, notifications center (swaync), wlogout menu, rofi launcher, fastfetch, cava and more!
 - Optional package install for repo and AUR software (Arch-based systems only).
-- Automated install script, with automated backup (SEE WARNING ABOVE!)
-
+- Automated install script, with automated backup **(SEE WARNING ABOVE!)**
 
 ---
 
@@ -58,3 +50,5 @@ git clone https://github.com/linuxlarp/nord-hyprland.git
 cd your-hyprland-dots
 chmod +x install.sh
 ./install.sh
+
+To view all of my keybinds, and make adjustments. Refer to ![This file]().
