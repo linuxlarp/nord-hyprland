@@ -7,6 +7,7 @@
 
 Minimal Hyprland dotfiles & setup using the [Nord color palette](https://nordtheme.com).
 
+
 ---
 
 # Showcase
@@ -15,6 +16,14 @@ Minimal Hyprland dotfiles & setup using the [Nord color palette](https://nordthe
 ![Fastfetch](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/fetch.png)
 ![Wallpaper Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/overview.png)
 ![SwayNC Showcase](https://github.com/linuxlarp/nord-hyprland/blob/master/showcase/sway.png)
+
+
+---
+
+# Keybinds
+
+These can be changed in `~/.config/hypr/hyprland.conf`:
+
 
 
 ---
