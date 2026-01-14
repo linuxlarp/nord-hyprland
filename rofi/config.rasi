@@ -1,0 +1,144 @@
+* {
+    background:     #2e3440;
+    background-alt: #3b4252;
+    foreground:     #d8dee9;
+    selected:       #88c0d0;
+    active:         #a3be8c;
+    urgent:         #bf616a;
+    
+    border-color:   #5e81ac;
+    separatorcolor: #4c566a;
+}
+
+configuration {
+    font: "JetBrainsMono Nerd Font 12";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    display-drun: "  Apps";
+    display-run: "  Run";
+    display-window: " 﩯 Windows";
+    drun-display-format: "{name}";
+    modi: "drun,run,window";
+}
+
+window {
+    transparency: "real";
+    background-color: @background;
+    text-color: @foreground;
+    border: 2px;
+    border-color: @border-color;
+    border-radius: 12px;
+    width: 600px;
+    location: center;
+    anchor: center;
+}
+
+prompt {
+    enabled: true;
+    padding: 8px;
+    background-color: @background-alt;
+    text-color: @selected;
+    border-radius: 8px;
+}
+
+textbox-prompt-colon {
+    expand: false;
+    str: " ";
+    background-color: @background-alt;
+    text-color: @selected;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: @separatorcolor;
+    background-color: @background-alt;
+    text-color: @foreground;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+inputbar {
+    children: [ textbox-prompt-colon, entry ];
+    background-color: @background;
+    text-color: @foreground;
+    spacing: 12px;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+listview {
+    background-color: @background;
+    columns: 1;
+    lines: 8;
+    spacing: 4px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+    padding: 8px;
+}
+
+mainbox {
+    background-color: @background;
+    children: [ inputbar, listview ];
+    spacing: 12px;
+    padding: 12px;
+}
+
+element {
+    background-color: transparent;
+    text-color: @foreground;
+    orientation: horizontal;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 28px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    expand: true;
+    vertical-align: 0.5;
+    margin: 0px 8px;
+}
+
+element normal.normal {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+element selected.normal {
+    background-color: @selected;
+    text-color: @background;
+    border-radius: 8px;
+}
+
+element alternate.normal {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+element normal.active {
+    background-color: @background;
+    text-color: @active;
+}
+
+element selected.active {
+    background-color: @active;
+    text-color: @background;
+}
+
+element normal.urgent {
+    background-color: @background;
+    text-color: @urgent;
+}
+
+element selected.urgent {
+    background-color: @urgent;
+    text-color: @background;
+}

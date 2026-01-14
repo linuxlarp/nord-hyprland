@@ -1,0 +1,10 @@
+hyprland
+hyprlock
+hypridle
+hyprpaper
+ghostty
+rofi
+waybar
+swaync
+fastfetch
+cava
