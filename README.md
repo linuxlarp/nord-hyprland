@@ -47,7 +47,7 @@ If you do not agree with these terms, do **not** run the installer or use my dot
 
 ```bash
 git clone https://github.com/linuxlarp/nord-hyprland.git
-cd your-hyprland-dots
+cd nord-hyprland
 chmod +x install.sh
 ./install.sh
 ```
